@@ -39,12 +39,4 @@ This public repository exists solely to document the methodology, workflow, and 
 
 ## Sample Workflow
 
-Cloudflare Export
-        ↓
-JSON Processing
-        ↓
-User-Agent Identification
-        ↓
-URL Grouping
-        ↓
-Reporting
+Cloudflare Export &rarr; JSON Processing &rarr; User-Agent Identification &rarr; URL Grouping &rarr; Reporting

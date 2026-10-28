@@ -106,44 +106,18 @@ A timestamped CSV report is generated containing:
 
 ### Cloudflare Export
 
-[screenshots\output-screenshot-redacted.png](Cloudflare Export)
+[Cloudflare Export Screenshot](screenshots\output-screenshot-redacted.png)
 
 ### Script Execution
 
-[screenshots\output-screenshot-redacted.png](Script Execution)
+[Script Execution](screenshots\output-screenshot-redacted.png)
 
 ### Report Output
 
-[/screenshots/report-output.png] (Report Output)
-
----
-
-## Repository Structure
-
-cloudflare-ai-crawler-analysis/
-│
-├── README.md
-├── SETUP.md
-├── ARCHITECTURE.md
-│
-├── docs/
-│   ├── methodology.md
-│   └── screenshots/
-│
-└── LICENSE
-
+[Report Output](screenshots/report-output.png)
 
 ---
 
 ## Security Notice
 
-No production code exists within this repository.
-
-The following assets remain private:
-
-- Python source code
-- Cloudflare exports
-- Generated reports
-- Internal analysis findings
-
-This repository serves as documentation only.
+No production code exists within this repository. This repository serves as documentation only.

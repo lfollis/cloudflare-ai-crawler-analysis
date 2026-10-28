@@ -16,66 +16,28 @@ The implementation resides in a private repository.
 # High-Level Architecture
 
 
-┌─────────────────────────┐
-│ Cloudflare Firewall Log │
-└────────────┬────────────┘
+Cloudflare Firewall Log
              │
              ▼
-┌─────────────────────────┐
-│ JSON Export             │
-└────────────┬────────────┘
+Json Export
              │
              ▼
-┌─────────────────────────┐
-│ Data Ingestion Layer    │
-│                         │
-│ Parse JSON Records      │
-│ Validate Data           │
-└────────────┬────────────┘
+Parse JSON Records & Validate Data
              │
              ▼
-┌─────────────────────────┐
-│ User Agent Analysis     │
-│                         │
-│ Identify Crawlers       │
-│ Group Requests          │
-└────────────┬────────────┘
+Identify Crawlers & Group requests
              │
              ▼
-┌─────────────────────────┐
-│ URL Processing Layer    │
-│                         │
-│ Deduplicate URLs        │
-│ Aggregate Requests      │
-└────────────┬────────────┘
+Deduplicate URLS & Aggregate Requests
              │
              ▼
-┌─────────────────────────┐
-│ Reporting Layer         │
-│                         │
-│ CSV Export              │
-│ Analyst Review          │
-└─────────────────────────┘
+CSV Export & Analyst Review
 
 ---
 
 # Data Flow
 
-Cloudflare
-      ↓
-Firewall Events
-      ↓
-JSON Export
-      ↓
-Private Python Analysis
-      ↓
-User-Agent Mapping
-      ↓
-URL Aggregation
-      ↓
-CSV Reporting
-      ↓
-Analysis
+Cloudflare &rarr; Firewall Events &rarr; JSON Export &rarr; Private Python Analysis &rarr; User-Agent Mapping &rarr; URL Aggregation &rarr; CSV Reporting &rarr; Analysis
 
 ---
 
@@ -142,10 +104,10 @@ Responsibilities:
 
 Outputs:
 
-Crawler
-  ├─ URL A
-  ├─ URL B
-  └─ URL C
+Crawler:
+ - URL A
+ - URL B
+ - URL C
 
 ---
 
@@ -166,7 +128,7 @@ Timestamped CSV Report
 
 Example:
 
-ai_agent_url_report_20261028_170501.csv
+ai_agent_url_report_20260101_000101.csv
 
 ---
 
