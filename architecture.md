@@ -16,22 +16,7 @@ The implementation resides in a private repository.
 # High-Level Architecture
 
 
-Cloudflare Firewall Log
-             │
-             ▼
-Json Export
-             │
-             ▼
-Parse JSON Records & Validate Data
-             │
-             ▼
-Identify Crawlers & Group requests
-             │
-             ▼
-Deduplicate URLS & Aggregate Requests
-             │
-             ▼
-CSV Export & Analyst Review
+Cloudflare Firewall Log &rarr; Json Export &rarr; Parse JSON Records & Validate Data &rarr; Identify Crawlers & Group requests &rarr; Deduplicate URLS & Aggregate Requests &rarr; CSV Export & Analyst Review
 
 ---
 
